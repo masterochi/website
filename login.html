@@ -8,30 +8,51 @@
 </head>
 
 <body>
-    <div class="btn-group">
-        <button>Home</button>
-        <button>Register</button>
-        <button>Contact</button>
-    </div>
-    <header>
-    <div>
-    <h1 class="bg-primary text-white text-center p-5 bg-gradient">Login</h1>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Task Management</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Login</a> <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <header class="bg-primary text-center text-white py-5 bg-gradient ">
+        <div class="container">
+            <h1 class="text-center">Login</h1>
+            <p class="lead">It's quick and easy</p>
+        </div>
     </header>
-
-    <form action="">
-        <label for="usname">Username</label>
+<section>
+    <div class="container md-3 mt-5 card py-2">
+        <form action="">
+            <label for="usname" class="form-label">Username</label>
         <br>
-        <input type="text" placeholder="Enter Username" name="usname" id="usname">
+        <input type="text" placeholder="Enter Username" class="form-control" id="usname">
         <br>
-        <label for="pass">Password</label>
+        <label for="pass" class="form-label">Password</label>
         <br>
-        <input type="password" placeholder="Enter Password" name="pass" id="pass">
+        <input type="password" placeholder="Enter Password"  class="form-control" id="pass">
         <br>
-        <br>
-        <input type="submit" value="Login"> 
+        <a href="main.html" class="btn btn-primary">Login</a> 
     </form>
-    
-    
+</div>
+</section>
+    <footer class="bg-dark text-white text-center py-2 fixed-bottom">
+        <div class="container">
+            <p>&copy; 2024 Task Management System. All rights reserved.</p>
+        </div>
+
+    <script src="asset/js/bootstrap.js"></script>
+
+    </footer>
+
 </body>
 </html>
